@@ -1,4 +1,8 @@
 
+# GraphQL 示例
+
+**本地需要先启动 mongodb**
+
 这是利用Koa + GraphQL + Apollo-Server实现的，学生信息增、删、改、查的栗子
 
 本栗子将搭配Koa实现一个GraphQL查询，逐步从简单Kao服务、到Mongodb的数据插入查询、再到GraphQL的使用，让大家快速看到：
