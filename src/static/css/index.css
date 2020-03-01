@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none
+}
+.app-title{
+  text-align: center;
+  padding: 10px 0;
+}
+#app{
+  display: flex;
+  justify-content: center;
+}
+.list{
+  border: 1px solid rgb(2, 145, 228);
+  width: 500px;
+  margin: 10px;
+}
+.list h3{
+  text-align: center;
+  background: rgb(2, 145, 228);
+  color: #ffffff;
+  line-height: 46px;
+}
+.list li {
+  line-height: 40px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0 20px;
+}
+.list li:hover{
+  background: #1ac4f9
+}
+.list li a {
+  color: #1ac4f9;
+}
+.list li:hover a{
+  color: #ffffff
+}
+.btnbox{
+  text-align: center;
+}
+.btnbox .btn{
+  width: 500px;
+  height: 40px;
+  margin: 10px auto;
+  border-radius: 10px;
+  background: #1ac4f9;
+  color: #ffffff;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.side {
+  width: 300px;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px #727272;
+  transform: translateX(-320px);
+  transition: 0.3s;
+}
+
+.clist {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.clist div{
+  padding: 5px 0px;
+}
+
+.clist button{
+  padding: 4px 10px;
+}
+
+.clist input{
+  padding: 2px 4px;
+  font-size: 14px;
+}

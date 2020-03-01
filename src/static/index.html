@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GraphQL-demo</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <h1 class="app-title">GraphQL Demo</h1>
+  <div id="app">
+    <div class="course list">
+      <h3>课程列表</h3>
+      <ul id="courseList">
+        <li>暂无数据....</li>
+      </ul>
+    </div>
+    <div class="student list">
+      <h3>班级学生列表</h3>
+      <ul id="studentList">
+        <li>暂无数据....</li>
+      </ul>
+    </div>
+  </div>
+  <div class="btnbox">
+    <div class="btn" id="btn4" onclick="$('#side').css({ transform: 'translateX(0px)' })">点击添加课程数据</div>
+    <div class="btn" id="btn5">点击添加学生数据</div>
+
+    <div class="btn" id="btn3">点击graphQL一次获取所有数据，问你怕不怕？</div>
+  </div>
+  <div class="toast"></div>
+  <div class="side" id="side">
+    <div class="clist">
+      <div>
+        <h3>添加课程操作</h3>
+      </div>
+      <div>
+        课程：<input id="c_title" type="text">
+      </div>
+      <div>
+        课程描述：<input id="c_desc" type="text">
+      </div>
+      <div>
+        作者：<input id="c_author" type="text">
+      </div>
+      <div>
+        页数：<input id="c_page" type="text">
+      </div>
+      <div>
+        <button id="qal_add_class">gql添加</button>
+        <button id="closeCourse" onclick="$('#side').css({ transform: 'translateX(-320px)' })">关闭</button>
+      </div>
+    </div>
+  </div>
+  <div class="side" id="side2">
+    <div class="clist">
+      <div>
+        <h3>添加学生操作</h3>
+      </div>
+      <div>
+        姓名：<input id="s_name" type="text">
+      </div>
+      <div>
+        性别：<input id="s_sex" type="text">
+      </div>
+      <div>
+        年龄：<input id="s_age" type="text">
+      </div>
+      <div>
+        <button id="qal_add_student">gql添加</button>
+        <button id="closeStudent" onclick="$('#side2').css({ transform: 'translateX(-320px)' })">关闭</button>
+      </div>
+    </div>
+  </div>
+  <div class="side" id="side3">
+    <div class="clist">
+      <div>
+        <h3>添加/修改学生信息</h3>
+      </div>
+      <div>
+        身高：<input id="i_height" type="text">
+      </div>
+      <div>
+        体重：<input id="i_weight" type="text">
+      </div>
+      <div>
+        爱好：
+        <input type="checkbox" name="hobby" value="唱">&nbsp;唱 &nbsp;
+        <input type="checkbox" name="hobby" value="跳">&nbsp;跳 &nbsp;
+        <input type="checkbox" name="hobby" value="RAP">&nbsp;Rap &nbsp;
+        <input type="checkbox" name="hobby" value="篮球">&nbsp;篮球
+      </div>
+      <div>
+        <button id="qal_add_student_info">gql添加/修改</button>
+        <button id="closeInfo" onclick="$('#side3').css({ transform: 'translateX(-320px)' })">关闭</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
